@@ -1,0 +1,83 @@
+<!----
+ This project start at 27/11/2020
+ day 1 : 27/11/2020  2 hours js + 4 hours (5:10 for 9:10) js +1.5 hours CSS (for 10:24)
+ day 2 : 28/11/2020  2 hours(9- 11) CSS +0.5  hours comment
+ I am finishing this project in two day and take about 10 hours 
+ BY : ABDULLAH SALHAB
+ new virsion:
+ day 3 : 26/2/2022  10-30 - 12:30 add sounds and font and change colors and edit the js file 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <title>The Timer and Stopwatch o'clock</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <!---this is the header of the page and contains the names --->
+    <div id="header" class="header">The Timer and Stopwatch o'clock</div>
+    <!---this is the main page text apper and contains the buttons by css--->
+    <div id="main" class="main">Welcome to the timer and stopwactch program 
+        that made by: <strong class="name"> ABDULLAH SALHAB </strong><br>
+        <br> <br><< Choose one of them >>
+    </div>
+    <!---this is the main button in the page to change the contant --->
+    <!---this is for stopwatch --->
+    <button id="show1" class="show" onclick="showup(),
+    restart(),clearInterval(interval)">The Stopwatch </button>
+    <!---this is for timer --->
+    <button id="show2" class="show" onclick="showdown(), 
+    restart(),clearInterval(interval)"> The Timer </button>
+    <!---this is for main contant --->
+    <button id="show3" class="show" onclick="showmain(), 
+    restart(),clearInterval(interval)"> Main page </button>
+    <!---this is contains all the button in the stopwatch  --->
+    <div id="up" class="up">
+     <button onclick="interval= setInterval(uptimer ,10) " id="start2">Start</button>
+     <button onclick="clearInterval(interval); stop('audio1');document.getElementById('start2').style.opacity=1; ">Stop</button>
+     <button onclick="split_time()">Split</button>
+     <button onclick="restart(),clearInterval(interval)">Restart</button>
+    </div>
+     <br>
+     <!---this is contains all the input number box  and labels and buttons 
+        in the timer  --->
+     <div id= "down" class="down">
+        <div class="all_choose">
+         <label style="font-size: larger;">Enter the Time </label><br><br>
+         <input type="number" id="hours_input" value="00" min="00" 
+              max="99" onchange="check_input(this.value ,3)">
+         <input type="number" id="min_input" value="00" min="00"
+              max="60" onchange="check_input(this.value ,2)">
+         <input type="number" id="second_input" value="00" min="00" 
+              max="60" onchange="check_input(this.value ,1)"><br>
+         <label>hours</label>
+         <label>minute</label>
+         <label>second</label>
+         <br>
+         <button id="start" onclick="interval_down= setInterval(downtimer ,10)">start</button>
+         <button id="stop" onclick="clearInterval(interval_down);stop('audio1');document.getElementById('start').style.opacity=1;">Stop</button>
+         <button onclick="restart(),clearInterval(interval_down)">Restart</button>
+        </div>
+    </div>
+    <!---this is the main div that show the number for timer or for stopwatch  --->
+     <div id="timer_box" class="timer_box">
+      <label id="hours">00</label>
+      <label >:</label>
+      <label id="min">00</label>
+      <label >:</label>
+      <label id="second">00</label>
+      <label >:</label>
+      <label id="milisecond">00</label>
+     </div>
+     <!---this is show the split time when the split button clicked --->
+    <div id="split" class="split">
+    </div>
+    <audio id="audio1" src="sounds/clock_sound.mp3"></audio>
+    <audio id="audio2" src="sounds/clock_alarm.mp3"></audio>
+    <script src="js/main.js"></script>
+</body>
+</html>
