@@ -29,7 +29,7 @@
         }
         @font-face {
             font-family: 'myFirstFont';
-            src: url(../css/font/DS-DIGI.TTF)format('truetype');
+            src: url(./css/font/DS-DIGI.TTF)format('truetype');
             font-weight: bold;
           }
         .timer_box{
