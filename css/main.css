@@ -29,7 +29,7 @@
         }
         @font-face {
             font-family: 'myFirstFont';
-            src: url(../The-Timer-and-Stopwatch-o-clock/font/F16_Panel DS-DIGI.TTF)format('truetype');
+            src: url(../css/font/DS-DIGI.TTF)format('truetype');
             font-weight: bold;
           }
         .timer_box{
