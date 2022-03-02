@@ -44,6 +44,7 @@
             border: 3px solid black;
             opacity: 0;
             color: rgb(0, 216, 216);
+                font-weight: bold;
             transition: all 1.5s;
         }
         .down{
@@ -62,6 +63,7 @@
             font-size: 25px;
             color: white;
             font-family: 'DS-Digital', sans-serif;
+                font-weight: bold;
             border: 3px solid black;
 
         }
@@ -71,7 +73,8 @@
             background-color: rgb(0, 0, 0);
             text-align: center;
             border-radius: 5px;
-            font-family: 'myFirstFont', sans-serif;
+            font-family: 'DS-Digital', sans-serif;
+                font-weight: bold;
             color: rgb(0, 216, 216);
             font-size: 35px;
             outline: none;
@@ -110,7 +113,8 @@
             margin-top: 3%;
             display: none;
             height: 230px;
-            font-family: 'myFirstFont', sans-serif;
+            font-family: 'DS-Digital', sans-serif;
+                font-weight: bold;
             overflow-y: scroll;
             width: 95%;
             box-shadow: 10px 10px 10px rgb(70, 70, 70);
