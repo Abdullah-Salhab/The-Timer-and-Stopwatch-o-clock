@@ -1,5 +1,5 @@
 # The-Timer-and-Stopwatch-o-clock
-WEB project Timer and Stopwatch o'clock Using javaScript
+WEB project Timer and Stopwatch o'clock Using javaScript .
 
 # Link: 
 https://abdullah-salhab.github.io/The-Timer-and-Stopwatch-o-clock/
